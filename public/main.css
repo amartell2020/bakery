@@ -1,0 +1,63 @@
+body {
+  text-align: center;
+  background-color: rgb(177, 177, 177);
+}
+
+#cover {
+  height: 160px;
+  background-position: center;
+  background-image: url("https://static.wixstatic.com/media/a4b210_20192b2ea884d7e1e6444dbc98bf9af7.png/v1/fill/w_880,h_345,al_c,q_80,usm_0.66_1.00_0.01/a4b210_20192b2ea884d7e1e6444dbc98bf9af7.webp");
+}
+
+ul {
+  list-style-type: none;
+  margin-top: -1%;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  margin: 1% 1%;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 70px;
+  text-shadow: 1px 1px #000;
+}
+
+#catalog {
+  justify-content: center;
+  display: grid;
+  grid-template: 350px / 350px 350px 350px;
+  grid-gap: 5%;
+}
+
+.items {
+  background-color: rgb(219, 219, 219);
+  border-radius: 5%;
+  text-decoration: underline;
+}
+
+img {
+  border: 1px solid black;
+  width: 80%;
+  height: 70%;
+}
