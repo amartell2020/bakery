@@ -29,7 +29,8 @@ end
 
 oreo = Cake.new("Cookies and Cream Extreme", "Layers of Devil's Food cake with creamy oreo filling inbetween, and Oreo frosting topped with oreos", "Price: $24.99")
 hershey = Cake.new("Mean Hershey Machine", "Layers of pound cake with Hershey chocolate syrup inbetween, and vanilla frosting topped with Hershey Kisses", "Price: $19.99")
-oreo = Cake.new("Cookies and Cream Extreme", "Layers of Devil's food cake with creamy oreo filling inbetween, and Oreo frosting topped with oreos", "Price: $24.99")
+cookie3 = Cake.new("Cookies and Cream Extreme", "Layers of Devil's food cake with creamy oreo filling inbetween, and Oreo frosting topped with oreos", "Price: $24.99")
+oatchoc = Cookie.new("Oatmeal Chocolate Chip","Oatmeal cookies with chocolate chips","Price per cookie: $1.99","Price per dozen: $19.99")
 
 get "/" do
   erb :home
