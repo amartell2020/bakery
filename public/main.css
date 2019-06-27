@@ -1,6 +1,10 @@
 body {
   text-align: center;
-  background-color: rgb(177, 177, 177);
+  background-image: linear-gradient( rgba(0,0,0,.3), rgba(0,0,0,.3) ), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL22ao82E4mTide3O0tgRZDkwfifbgtFXcXnMLe4nPGHYRVhq8');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 #cover {
@@ -43,18 +47,21 @@ h1 {
   text-shadow: 1px 1px #000;
 }
 
-.link {
+h2 {
   color: black;
-  text-decoration: none;
   font-family: 'Dancing script';
   text-shadow: 1px 1px #fff;
 }
 
-.link:hover {
+a {
+  text-decoration: none;
+}
+
+h2:hover {
   color: red;
 }
 
-#catalog {
+.catalog {
   justify-content: center;
   display: grid;
   grid-template: 350px / 350px 350px 350px;
@@ -69,5 +76,37 @@ h1 {
 img {
   border: 1px solid black;
   width: 80%;
-  height: 70%;
+  height: 245px;
+}
+
+.food {
+  background-color: rgb(219, 219, 219);
+  border-radius: 5%;
+  height: 450px;
+}
+
+#about {
+  margin: 5% 5%;
+  justify-content: center;
+  display: grid;
+  grid-template: 400px / 400px 400px;
+  grid-gap: 5%;
+}
+
+#history {
+  text-align: center;
+  background-color: rgb(219, 219, 219);
+  border-radius: 5%;
+}
+
+#founder {
+  border-radius: 5%;
+  background-color: rgb(219, 219, 219);
+}
+
+p {
+  font-family: sans-serif;
+  margin: 0 0;
+  width: 75%;
+  padding-left: 49px;
 }

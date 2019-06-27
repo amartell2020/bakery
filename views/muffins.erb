@@ -1,1 +1,11 @@
-<h2>Muffins are just smaller cakes</h2>
+<h1 class="ad">Muffins are just smaller cakes</h1>
+<div class="catalog">
+  <% for i in (0..2) do %>
+  <div class="food">
+    <h2><%= @muffins[i].name %></h2>
+    <img src="<%= @muffins[i].img %>">
+    <h3><%= @muffins[i].description %></h3>
+    <p><%= @muffins[i].price %></p>
+  </div>
+  <% end %>
+</div>
