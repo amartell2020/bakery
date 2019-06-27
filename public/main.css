@@ -5,6 +5,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+  font-family: sans-serif;
 }
 
 #cover {
@@ -59,6 +60,7 @@ h2 {
 }
 
 a {
+  color: black;
   text-decoration: none;
 }
 
@@ -109,7 +111,6 @@ img {
 }
 
 p {
-  font-family: sans-serif;
   margin: 0 0;
   width: 75%;
   padding-left: 49px;
@@ -124,4 +125,8 @@ footer {
   height: 80px;
   background-color: #333;
   color: white;
+}
+
+#in {
+  width: 200px;
 }
