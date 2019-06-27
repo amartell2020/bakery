@@ -26,6 +26,11 @@ li {
   border-right: 1px solid #bbb;
 }
 
+li:last-child {
+  float: right;
+  border-left: 1px solid #bbb;
+}
+
 li a {
   display: block;
   color: white;
@@ -86,7 +91,6 @@ img {
 }
 
 #about {
-  margin: 5% 5%;
   justify-content: center;
   display: grid;
   grid-template: 400px / 400px 400px;
@@ -109,4 +113,15 @@ p {
   margin: 0 0;
   width: 75%;
   padding-left: 49px;
+}
+
+section {
+  height: 500px;
+}
+
+footer {
+  font-size: 30px;
+  height: 80px;
+  background-color: #333;
+  color: white;
 }

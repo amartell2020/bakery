@@ -7,14 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section id="cover">
-    </section>
+    <div id="cover">
+    </div>
     <ul>
       <li><a href="/">HOME</a></li>
       <li><a href="cakes">CAKES</a></li>
       <li><a href="cookies">COOKIES</a></li>
       <li><a href="muffins">MUFFINS</a></li>
+      <li><a href="events">EVENTS</a></li>
     </ul>
     <%= yield %>
+    <footer>
+      <form action="index.html" method="post">
+        <label>Enter your email to receive our catalog</label><br>
+        <input type="text" value="Enter your email">
+        <input type="submit" value="Submit">
+      </form>
+    </footer>
   </body>
 </html>

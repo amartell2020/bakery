@@ -1,12 +1,14 @@
 <h1 class="ad">Cookie Monster gave us his seal of approval</h1>
-<div class="catalog">
-  <% for i in (0..2) do %>
-  <div class="food">
-    <h2><%= @cookies[i].name %></h2>
-    <img src="<%= @cookies[i].img %>">
-    <h3><%= @cookies[i].description %></h3>
-    <p><%= @cookies[i].ppc %></p>
-    <p><%= @cookies[i].ppd %></p>
+<section>
+  <div class="catalog">
+    <% for i in (0..2) do %>
+    <div class="food">
+      <h2><%= @cookies[i].name %></h2>
+      <img src="<%= @cookies[i].img %>">
+      <h3><%= @cookies[i].description %></h3>
+      <p><%= @cookies[i].ppc %></p>
+      <p><%= @cookies[i].ppd %></p>
+    </div>
+    <% end %>
   </div>
-  <% end %>
-</div>
+</section>

@@ -1,11 +1,13 @@
 <h1 class="ad">So you want to buy a cake</h1>
-<div class="catalog">
-  <% for i in (0..2) do %>
-  <div class="food">
-    <h2><%= @cakes[i].name %></h2>
-    <img src="<%= @cakes[i].img %>">
-    <h3><%= @cakes[i].description %></h3>
-    <p><%= @cakes[i].price %></p>
+<section>
+  <div class="catalog">
+    <% for i in (0..2) do %>
+    <div class="food">
+      <h2><%= @cakes[i].name %></h2>
+      <img src="<%= @cakes[i].img %>">
+      <h3><%= @cakes[i].description %></h3>
+      <p><%= @cakes[i].price %></p>
+    </div>
+    <% end %>
   </div>
-  <% end %>
-</div>
+</section>
