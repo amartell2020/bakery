@@ -1,6 +1,7 @@
 require "sinatra"
 require "httparty"
 
+
 class Cake
   attr_accessor :name, :description, :price, :img
   def initialize(name,description,price, img)
@@ -57,4 +58,13 @@ end
 get "/muffins" do
   @muffins = [plain, blue, straw]
   erb :muffins
+end
+
+api_key = 'TSRB2JJKCPVSTV5VHPF5'
+
+get "/events" do
+  @req = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=bakery&token=#{api_key}")
+  data = JSON.parse(@req.body)
+  @events = data['events']
+  erb :events
 end

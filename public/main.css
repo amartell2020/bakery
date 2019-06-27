@@ -121,6 +121,7 @@ section {
 }
 
 footer {
+  border: 1px solid white;
   font-size: 30px;
   height: 80px;
   background-color: #333;
@@ -129,4 +130,35 @@ footer {
 
 #in {
   width: 200px;
+}
+
+#last {
+  display: grid;
+  grid-gap: 10px;
+  height: 1600px;
+}
+
+.events {
+  justify-content: center;
+  font-size: 10px;
+  display: grid;
+  grid-template: 100px / 225px 125px 700px 100px;
+  grid-gap: 10px;
+  background-color: rgb(219, 219, 219);
+  height: 250px;
+  width: 100%;
+}
+
+.comp {
+  font-size: 20px;
+  padding-top: 80px;
+}
+
+.desc {
+  padding-top: 30px;
+}
+
+.epic {
+  margin-top: 20px;
+  height: 200px;
 }

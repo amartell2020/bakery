@@ -1,0 +1,11 @@
+<h1 style="font-size:60px">We showcsae competition becasue we know we're better</h1>
+<section id="last">
+    <% for i in (0..5) do %>
+    <div class="events">
+      <img class="epic" src="<%= @events[i]['logo']['original']['url'] %>">
+      <h3 style="padding-top: 40px"><%= @events[i]['name']['text'] %></h3>
+      <h3 class="desc"><%= @events[i]['description']['text'] %></h3>
+      <a class="comp" href="<%= @events[i]['url'] %>">Visit their site</a>
+    </div>
+    <% end %>
+</section>
