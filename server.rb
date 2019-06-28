@@ -1,5 +1,6 @@
 require "sinatra"
 require "httparty"
+require "./mailer.rb"
 
 
 class Cake
@@ -41,7 +42,9 @@ plain = Muffin.new("Plain Muffins","Plain muffins","Price: $2.99", "https://encr
 blue = Muffin.new("Blueberry Muffins","Blueberry muffins","Price: $2.99", "https://smittenkitchendotcom.files.wordpress.com/2010/08/perfect-blueberry-muffins.jpg?w=750")
 straw = Muffin.new("Strawberry Muffins","Strawberry muffins","Price: $2.99", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_mMgXouK1mymd4lgSp2_WqRedG5AzWvgW5e_b2VcFJy2BV9xy")
 
-Newsletter.food(recipient).deliver_now #sends email to recipient
+def send_email(rec)
+  Newsletter.welcome(rec).deliver_now #sends email to recipient
+end
 
 get "/" do
   erb :home
@@ -60,6 +63,11 @@ end
 get "/muffins" do
   @muffins = [plain, blue, straw]
   erb :muffins
+end
+
+get "/thanks" do
+  send_email(params[:email])
+  erb :thanks
 end
 
 api_key = 'TSRB2JJKCPVSTV5VHPF5'
