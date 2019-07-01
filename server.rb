@@ -73,7 +73,7 @@ end
 $api_key = 'TSRB2JJKCPVSTV5VHPF5'
 
 get "/events" do
-  @req = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=bakery&token=#{api_key}")
+  @req = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=bakery&token=#{$api_key}")
   data = JSON.parse(@req.body)
   @events = data['events']
   erb :events
