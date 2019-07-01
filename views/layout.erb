@@ -18,6 +18,17 @@
     </ul>
     <%= yield %>
   </body>
+  <% if request.path == "/thanks" %>
+  <footer style="display:none">
+  <% else %>
+  <footer>
+  <% end %>
+    <form action="/thanks" method="get">
+      <label>Enter your email to receive our catalog</label><br>
+      <input id="in" type="text" name="email" placeholder="Enter your email">
+      <input type="submit" value="Submit">
+    </form>
+  </footer>
 </html>
 
 <!-- to send email:

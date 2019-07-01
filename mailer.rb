@@ -7,8 +7,8 @@ ActionMailer::Base.view_paths = File.dirname(__FILE__)
 ActionMailer::Base.smtp_settings = {
   address:    "smtp.gmail.com",
   port:       "587",
-  user_name:  "alexmartell6@gmail.com",
-  password:   "eliahs1228",
+  user_name:  "papitospastries@gmail.com",
+  password:   "123Papito",
   authentication: :plain
 }
 
