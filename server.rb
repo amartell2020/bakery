@@ -70,7 +70,7 @@ get "/thanks" do
   erb :thanks
 end
 
-api_key = 'TSRB2JJKCPVSTV5VHPF5'
+$api_key = 'TSRB2JJKCPVSTV5VHPF5'
 
 get "/events" do
   @req = HTTParty.get("https://www.eventbriteapi.com/v3/events/search/?q=bakery&token=#{api_key}")
