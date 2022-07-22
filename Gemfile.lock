@@ -52,6 +52,8 @@ GEM
     minitest (5.11.3)
     multi_xml (0.6.0)
     mustermann (1.0.3)
+    nokogiri (1.10.3)
+      mini_portile2 (~> 2.4.0)
     nokogiri (1.10.3-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     rack (2.0.7)
@@ -71,11 +73,12 @@ GEM
       tilt (~> 2.0)
     thread_safe (0.3.6)
     tilt (2.0.9)
-    tzinfo (1.2.5)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   actionmailer
